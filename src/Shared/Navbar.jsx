@@ -12,7 +12,7 @@ const Navbar = () => {
     </>
     return (
         <div className='z-[100]'>
-            <div className="navbar bg-base-100">
+            <div className="navbar">
                 <div className="flex-1">
                     <Link href={''} className="btn btn-ghost normal-case text-xl">Frienemie</Link>
                 </div>
