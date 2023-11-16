@@ -47,7 +47,7 @@ const items = // data/portfolio.json
 const page = () => {
     return (
         <div className='my-8'>
-            <div className='text-xl bg-green-50 text-center p-3'>My Works & Experience </div>
+            <div className='text-xl bg-green-50 text-gray-950 text-center p-3'>My Works & Experience </div>
             {
                 items.map((item, ind) => (
                     <div key={ind} className="hero gap-7">

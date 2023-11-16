@@ -3,6 +3,7 @@
 import Image from "next/image";
 import imgProfile from '@/public/Profile.jpg'
 import Typewriter from "@/src/Components/Typewriter";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -18,7 +19,7 @@ export default function Home() {
             <Typewriter text={textToType} />
           </div>
           <button className="btn btn-primary ms-0 m-2">Download CV</button>
-          <button className="btn btn-primary m-2">Contract Me</button>
+          <Link href={'/route/contract'} className="btn btn-primary m-2">Contract Me</Link>
         </div>
         <div className="w-full flex justify-center my-8 ">
           <Image src={imgProfile} className="max-w-sm rounded-lg shadow-2xl" alt="Profile Sakib Talukqder" />

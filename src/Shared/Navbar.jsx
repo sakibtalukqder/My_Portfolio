@@ -1,20 +1,21 @@
 import Link from 'next/link';
 import React from 'react';
+import DarkToggle from '../Components/DarkToggle';
 
 const Navbar = () => {
     const menu = <>
         <Link href={'/'}><li className='px-4 py-2 rounded hover:bg-green-300'>Home</li></Link>
         <Link href={'/route/about'}><li className='px-4 py-2 rounded hover:bg-green-300'>About</li></Link>
-        {/* <Link href={'/route/education'}><li className='px-4 py-2 rounded hover:bg-green-300'>Education</li></Link> */}
         <Link href={'/route/skills'}><li className='px-4 py-2 rounded hover:bg-green-300'>Skills</li></Link>
         <Link href={'/route/projects'}><li className='px-4 py-2 rounded hover:bg-green-300'>Projects</li></Link>
         <Link href={'/route/contract'}><li className='px-4 py-2 rounded hover:bg-green-300'>Contract</li></Link>
+        <div><li className='px-2 py-2 rounded-full hover:bg-green-300 flex items-center'> <DarkToggle /> </li></div>
     </>
     return (
         <div className='z-[100]'>
             <div className="navbar">
                 <div className="flex-1">
-                    <Link href={''} className="btn btn-ghost normal-case text-xl">Frienemie</Link>
+                    <Link href={'/'} className="btn btn-ghost normal-case text-xl">Sakib Talukqder</Link>
                 </div>
                 <div className="flex-none">
                     <ul className="menu-horizontal px-1">

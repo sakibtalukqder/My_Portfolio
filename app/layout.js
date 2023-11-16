@@ -14,6 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/wpCst.jpg" type='image/jpg' />
+      </head>
       <body className={inter.className}>
         <div className='mx-0 md:mx-12 lg:mx-16 xl:mx-20'>
           <Navbar />

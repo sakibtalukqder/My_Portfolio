@@ -19,21 +19,25 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: [ 
-      "light"
-      // {
-      //   light: {
-      //     ...require("daisyui/src/theming/themes")["dark"],
-      //     "body": {
-      //       "background-color": "#080808",
-      //       "color": "white",
-      //     },
-      //     ".btn-twitter:hover": {
-      //       "background-color": "#1C96E1",
-      //       "border-color": "#1C96E1",
-      //     },
-      //   },
-      // },
+    themes: [
+      // "dark",
+      // "light",
+      {
+        'myTheme': {
+          ...require("daisyui/src/theming/themes")["dark"],
+          "body": {
+            "background-color": "#080808",
+            "color": "white",
+          },
+
+          ".text-black": {
+            "color": "white",
+          },
+          ".bg-blue-50": {
+            "background-color": "#00030b",
+          },
+        },
+      },
     ],
   },
 }
