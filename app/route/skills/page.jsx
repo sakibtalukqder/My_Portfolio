@@ -1,56 +1,154 @@
 'use client';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDatabase, faC } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3, faJs, faReact, faNode, faJava, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5, faCss3, faJs, faReact, faNode, faJava, faPython, faGithub, faUbuntu, faBootstrap, faFirefox, faWindows, faAndroid } from '@fortawesome/free-brands-svg-icons';
 import img from '@/public/sakib1.jpg'
 import Image from 'next/image';
+import { Accordion } from 'keep-react';
+import { CaretDown, CaretUp } from "phosphor-react";
+
+const tailwind = 'https://avatars.githubusercontent.com/u/67109815?s=280&v=4'
+const C = '/pngegg.png'
+const Csharp = '/csharp.png'
+const FireBase = '/firebase.png'
 
 const skills = [
-    { name: 'Python', icon: faPython, level: 7 },
-    { name: 'JavaScript', icon: faJs, level: 8 },
-    { name: 'Java', icon: faJava, level: 5 },
-    { name: 'React', icon: faReact, level: 8 },
-    { name: 'Node.js', icon: faNode, level: 7 },
-    { name: 'Next.js', icon: faReact, level: 5 },
-    { name: 'Express.js', icon: faNode, level: 6 },
-    { name: 'MongoDb', icon: faDatabase, level: 6 },
-    { name: 'HTML', icon: faHtml5, level: 8 },
-    { name: 'CSS', icon: faCss3, level: 7 },
-    { name: 'C', icon: faC, level: 5 },
-    { name: 'C#', icon: faC, level: 6 },
+    {
+        Title: 'Programming Language',
+        Array: [
+            { name: 'Python', icon: faPython, level: 7 },
+            { name: 'C', img: C, level: 5 },
+            { name: 'Java', icon: faJava, level: 5 },
+            { name: 'Csharp', img: Csharp, level: 6 },
+        ],
+        
+    },
+    
+    {
+        Title: 'FrontEnd Development',
+        Array: [
+            { name: 'JavaScript', icon: faJs, level: 8 },
+            { name: 'React', icon: faReact, level: 8 },
+            { name: 'Next.js', icon: faReact, level: 5 },
+            { name: 'HTML', icon: faHtml5, level: 8 },
+            { name: 'CSS', icon: faCss3, level: 7 },
+            { name: 'Tailwind', img: tailwind, level: 8 },
+            { name: 'Bootstrap', icon: faBootstrap, level: 7 },
+            { name: 'Daisyui', icon: faBootstrap, level: 7 },
+        ],
+
+    },
+
+    {
+        Title: 'BackEnd Development',
+        Array: [
+            { name: 'Node.js', icon: faNode, level: 7 },
+            { name: 'Express.js', icon: faNode, level: 6 },
+            { name: 'MongoDb', icon: faDatabase, level: 6 },
+            { name: 'FireBase', img: FireBase, level: 6 },
+        ],
+
+    },
+
+    {
+        Title: 'Graphical Interface',
+        Array: [
+            { name: 'Illustrator', icon: faWindows, level: 8 },
+            { name: 'Photoshop', icon: faUbuntu, level: 8 },
+            { name: 'Canva', icon: faAndroid, level: 8 },
+            { name: 'Adobe XD', icon: faAndroid, level: 8 },
+        ],
+
+    },
+    {
+        Title: 'Office and Docs',
+        Array: [
+            { name: 'Docs', icon: faWindows, level: 8 },
+            { name: 'SpaceSheet', icon: faUbuntu, level: 8 },
+            { name: 'Ms Access', icon: faAndroid, level: 8 },
+            { name: 'Powerpoint', icon: faAndroid, level: 8 },
+        ],
+
+    },
+    {
+        Title: 'Oprating System',
+        Array: [
+            { name: 'Windows', icon: faWindows, level: 10 },
+            { name: 'Ubuntu', icon: faUbuntu, level: 9 },
+            { name: 'Android', icon: faAndroid, level: 10 },
+            { name: 'Android', icon: faAndroid, level: 0 },
+        ],
+
+    },
+
+    {
+        Title: 'Others',
+        Array: [
+            { name: 'Github', icon: faGithub, level: 9 },
+            { name: 'FireFox', icon: faFirefox, level: 10 },
+            { name: 'VS Code', icon: faFirefox, level: 9 },
+            { name: 'Arduino', icon: faFirefox, level: 10 },
+        ],
+    },
+
 ];
 
 const SkillCard = ({ skill }) => {
     return (
-        <div className=" w-32 h-32 p-1 flex flex-col items-center justify-center">
-            <figure className='flex justify-center items-center h-32 w-32'>
-                <FontAwesomeIcon icon={skill.icon} className="text-xl mb-2 h-16 w-16" />
+        <div className=" w-32 h-32 p-3 flex flex-col items-center justify-center border">
+            <figure className='flex justify-center items-center h-16 w-16 overflow-hidden'>
+                {
+                    skill.icon ?
+                        <FontAwesomeIcon icon={skill.icon} className="text-md mb-2 h-12 w-12" />
+                        : <img src={skill.img} alt='Icon' className="mb-2 h-12 w-12" />
+                }
             </figure>
-            <progress className="progress progress-accent" value={skill.level * 10} max="100"></progress>
-            <h3 className="text-xl font-semibold mb-2">{skill.name}</h3>
+            <progress className="progress progress-accent rounded-none text-xs" value={skill.level * 10} max="100"></progress>
+            <h3 className="text-md font-semibold mb-2">{skill.name}</h3>
         </div>
     );
 };
 
 const page = () => {
     return (
-        <div className="hero my-12">
+        <div className="hero my-8">
             <div className="hero-content flex-col lg:flex-row">
                 <div className='md:w-1/2'>
                     <div className="flex justify-center md:justify-start">
-                        <figure className='w-72 h-72 mb-8 overflow-hidden flex items-center justify-center'>
+                        <figure className='w-72 h-72 mb-8 overflow-hidden flex items-center justify-center rounded shadow-xl'>
                             <Image src={img} alt='Sakib Picture' />
                         </figure>
                     </div>
                     <h1 className="text-4xl font-bold">Things I worked With .... !</h1>
                     <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <p className=''>Language: <span className=' text-green-200'>English and Bangla both Reading and Speaking .</span></p>
                 </div>
-
-                <div className="md:w-1/2 flex flex-wrap justify-center gap-2 py-2">
-                    {skills.map((skill, index) => (
-                        <SkillCard key={index} skill={skill} />
-                    ))}
+                <div className="md:w-1/2">
+                    <Accordion
+                        openIcon={<CaretUp />}
+                        closeIcon={<CaretDown />}
+                        iconPosition="right"
+                        // alwaysOpen={true}
+                        flush={true}
+                    >
+                        {
+                            skills.map((Key, index) => (
+                                <Accordion.Panel key={index}>
+                                    <Accordion.Title className='text-black'>
+                                        {Key.Title}
+                                    </Accordion.Title>
+                                    <Accordion.Content>
+                                        <div className='flex flex-wrap justify-center gap-2 py-2'>
+                                            {Key.Array.map((skill, index) => (
+                                                <SkillCard key={index} skill={skill} />
+                                            ))}
+                                        </div>
+                                    </Accordion.Content>
+                                </Accordion.Panel>
+                            ))
+                        }
+                    </Accordion>
                 </div>
             </div>
         </div>
