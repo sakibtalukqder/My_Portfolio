@@ -1,44 +1,53 @@
-// components/Portfolio.js
 import React from 'react';
 import Image from 'next/image';
 
-
-
-const items = // data/portfolio.json
+const items = 
     [
+        {
+            "title": "My Portfolio ",
+            "description": "(this.website)",
+            "technologies": "NextJs, React, TailwindCSS, DaisyUi, KeepReact",
+            "imageName": "/projects/project6.png",
+            "ctaLink": "https://sakibtalukqder.netlify.app",
+        },
+
         {
             "title": "Contract Management App",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "technologies": "React, ExpressJs, MomgoDb, Tailwind CSS",
-            "imageName": "/project1.png",
-            "ctaLink": "https://frienemie.netlify.app/",
+            "imageName": "/projects/project1.png",
+            "ctaLink": "https://frienemie.netlify.app",
         },
+
         {
             "title": "Contract Page",
             "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "technologies": "Html5, Css4, Bootstrap5, JavaScript(Vanilla)",
-            "imageName": "/project2.png",
+            "imageName": "/projects/project2.png",
             "ctaLink": "https://sakibtalukqder.github.io",
         },
+
         {
             "title": "Product Information (Watch)",
             "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "technologies": "Html5, Css4, Bootstrap5, JavaScript(Vanilla)",
-            "imageName": "/project3.png",
+            "imageName": "/projects/project3.png",
             "ctaLink": "https://sakibtalukqder.github.io/watch",
         },
+
         {
             "title": "Basic Calculator",
             "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "technologies": "Html5, Css4, JavaScript(Vanilla)",
-            "imageName": "/project4.png",
+            "imageName": "/projects/project4.png",
             "ctaLink": "https://sakibtalukqder.github.io/calculator",
         },
+
         {
             "title": "Social Organization",
             "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "technologies": "Html5, Css4,Bootstrap5, JavaScript(Vanilla)",
-            "imageName": "/project5.png",
+            "imageName": "/projects/project5.png",
             "ctaLink": "https://pficlint.netlify.app",
         },
     ]
@@ -63,7 +72,7 @@ const page = () => {
                                         <p className="mb-4">
                                             <strong>Technologies used:</strong> {item.technologies}
                                         </p>
-                                        <a href={item.ctaLink} className=" btn btn-success btn-sm">
+                                        <a href={item.ctaLink} target='/' className=" btn btn-success btn-sm">
                                             {
                                                 ind % 2 == 0 ? 'View case study ==>' : '<== View case study'
                                             }

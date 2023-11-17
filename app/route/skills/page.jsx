@@ -1,41 +1,42 @@
 'use client';
+
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3, faJs, faReact, faNode, faJava, faPython, faGithub, faUbuntu, faBootstrap, faFirefox, faWindows, faAndroid } from '@fortawesome/free-brands-svg-icons';
-import img from '@/public/sakib1.jpg'
+import { faHtml5, faCss3, faJs, faReact, faNode, faJava, faPython, faGithub, faUbuntu, faBootstrap, faFirefox, faWindows, faAndroid, faNodeJs, faChromecast } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 import { Accordion } from 'keep-react';
 import { CaretDown, CaretUp } from "phosphor-react";
+import img from '@/public/sakib4.jpg'
 
-const tailwind = 'https://avatars.githubusercontent.com/u/67109815?s=280&v=4'
-const C = '/pngegg.png'
-const Csharp = '/csharp.png'
-const FireBase = '/firebase.png'
 
 const skills = [
+
     {
         Title: 'Programming Language',
         Array: [
             { name: 'Python', icon: faPython, level: 7 },
-            { name: 'C', img: C, level: 5 },
-            { name: 'Java', icon: faJava, level: 5 },
-            { name: 'Csharp', img: Csharp, level: 6 },
+            { name: 'C', img: '/Icon/C.png', level: 5 },
+            { name: 'Java', icon: faJava, level: 7 },
+            { name: 'Csharp', img: '/Icon/csharp.png', level: 7 },
+            { name: 'JavaScript', icon: faJs, level: 8 },
+            { name: 'ES6', icon: faJs, level: 8 },
+            { name: 'Arduino', img: '/Icon/Arduino.png', level: 8 },
+            { name: 'TypeScript', icon: faJs, level: 0 },
         ],
-        
+
     },
-    
+
     {
         Title: 'FrontEnd Development',
         Array: [
-            { name: 'JavaScript', icon: faJs, level: 8 },
             { name: 'React', icon: faReact, level: 8 },
-            { name: 'Next.js', icon: faReact, level: 5 },
+            { name: 'Next.js', img: '/Icon/next.png', level: 5 },
             { name: 'HTML', icon: faHtml5, level: 8 },
             { name: 'CSS', icon: faCss3, level: 7 },
-            { name: 'Tailwind', img: tailwind, level: 8 },
+            { name: 'Tailwind', img: '/Icon/tailwind.png', level: 8 },
             { name: 'Bootstrap', icon: faBootstrap, level: 7 },
-            { name: 'Daisyui', icon: faBootstrap, level: 7 },
+            { name: 'Daisyui', img: '/Icon/daisyui.png', level: 7 },
+            { name: 'KeepReact', img: '/Icon/keep.svg', level: 7 },
         ],
 
     },
@@ -43,10 +44,10 @@ const skills = [
     {
         Title: 'BackEnd Development',
         Array: [
-            { name: 'Node.js', icon: faNode, level: 7 },
+            { name: 'Node.js', icon: faNodeJs, level: 7 },
             { name: 'Express.js', icon: faNode, level: 6 },
-            { name: 'MongoDb', icon: faDatabase, level: 6 },
-            { name: 'FireBase', img: FireBase, level: 6 },
+            { name: 'MongoDb', img: '/Icon/mongo.png', level: 6 },
+            { name: 'FireBase', img: '/Icon/firebase.png', level: 6 },
         ],
 
     },
@@ -54,30 +55,32 @@ const skills = [
     {
         Title: 'Graphical Interface',
         Array: [
-            { name: 'Illustrator', icon: faWindows, level: 8 },
-            { name: 'Photoshop', icon: faUbuntu, level: 8 },
-            { name: 'Canva', icon: faAndroid, level: 8 },
-            { name: 'Adobe XD', icon: faAndroid, level: 8 },
+            { name: 'Illustrator', img: '/Icon/ai.png', level: 9 },
+            { name: 'Photoshop', img: '/Icon/ps.png', level: 8 },
+            { name: 'Canva', img: '/Icon/Canva.png', level: 9 },
+            { name: 'Adobe XD', img: '/Icon/Xd.png', level: 7 },
         ],
 
     },
+
     {
         Title: 'Office and Docs',
         Array: [
-            { name: 'Docs', icon: faWindows, level: 8 },
-            { name: 'SpaceSheet', icon: faUbuntu, level: 8 },
-            { name: 'Ms Access', icon: faAndroid, level: 8 },
-            { name: 'Powerpoint', icon: faAndroid, level: 8 },
+            { name: 'Docs', img: '/Icon/docs.png', level: 8 },
+            { name: 'SpaceSheet', img: '/Icon/sheet.png', level: 7 },
+            { name: 'MsAccess', img: '/Icon/access.png', level: 8 },
+            { name: 'Powerpoint', img: '/Icon/PowerPoint.png', level: 8 },
         ],
 
     },
+
     {
         Title: 'Oprating System',
         Array: [
             { name: 'Windows', icon: faWindows, level: 10 },
             { name: 'Ubuntu', icon: faUbuntu, level: 9 },
             { name: 'Android', icon: faAndroid, level: 10 },
-            { name: 'Android', icon: faAndroid, level: 0 },
+            { name: 'Chrome OS', icon: faChromecast, level: 9 },
         ],
 
     },
@@ -85,10 +88,10 @@ const skills = [
     {
         Title: 'Others',
         Array: [
-            { name: 'Github', icon: faGithub, level: 9 },
+            { name: 'Github', icon: faGithub, level: 8 },
+            { name: 'VS Code', img: '/Icon/code.png', level: 9 },
             { name: 'FireFox', icon: faFirefox, level: 10 },
-            { name: 'VS Code', icon: faFirefox, level: 9 },
-            { name: 'Arduino', icon: faFirefox, level: 10 },
+            { name: 'Arduino', img: '/Icon/arduino_2.png', level: 10 },
         ],
     },
 
@@ -104,8 +107,8 @@ const SkillCard = ({ skill }) => {
                         : <img src={skill.img} alt='Icon' className="mb-2 h-12 w-12" />
                 }
             </figure>
-            <progress className="progress progress-accent rounded-none text-xs" value={skill.level * 10} max="100"></progress>
             <h3 className="text-md font-semibold mb-2">{skill.name}</h3>
+            <progress className="progress progress-accent w-full h-1" value={skill.level * 10} max="100"></progress>
         </div>
     );
 };
@@ -113,7 +116,7 @@ const SkillCard = ({ skill }) => {
 const page = () => {
     return (
         <div className="hero my-8">
-            <div className="hero-content flex-col lg:flex-row">
+            <div className="hero-content md:items-start flex-col lg:flex-row">
                 <div className='md:w-1/2'>
                     <div className="flex justify-center md:justify-start">
                         <figure className='w-72 h-72 mb-8 overflow-hidden flex items-center justify-center rounded shadow-xl'>
@@ -138,7 +141,7 @@ const page = () => {
                                     <Accordion.Title className='text-black'>
                                         {Key.Title}
                                     </Accordion.Title>
-                                    <Accordion.Content>
+                                    <Accordion.Content className='flex justify-start'>
                                         <div className='flex flex-wrap justify-center gap-2 py-2'>
                                             {Key.Array.map((skill, index) => (
                                                 <SkillCard key={index} skill={skill} />

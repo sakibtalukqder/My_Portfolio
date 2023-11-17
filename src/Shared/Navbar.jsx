@@ -15,7 +15,9 @@ const Navbar = () => {
         <div className='z-[100]'>
             <div className="navbar">
                 <div className="flex-1">
-                    <Link href={'/'} className="btn btn-ghost normal-case text-xl">Sakib Talukqder</Link>
+                    <Link href={'/'} className="btn btn-ghost normal-case text-4xl My_Logo">
+                        Sakib Talukqder
+                    </Link>
                 </div>
                 <div className="flex-none">
                     <ul className="menu-horizontal px-1">
@@ -33,7 +35,6 @@ const Navbar = () => {
             </div>
             <hr />
 
-            {/* Small Screen  */}
             <div className="drawer drawer-end">
                 <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
@@ -41,7 +42,7 @@ const Navbar = () => {
                 </div>
                 <div className="drawer-side z-[100]">
                     <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                    <ul className="px-8 leading-8 p-4 w-1/2 min-h-full bg-slate-900 text-white  ">
+                    <ul className="px-8 leading-8 p-4 w-4/5 min-h-full bg-slate-900 text-white  ">
                         {/* Sidebar content here */}
                         <li className='justify-end flex pb-6 float-right'>
                             <label htmlFor="my-drawer-4" aria-label="close sidebar" className='hover:bg-red-500 border px-3 py-1 rounded' >

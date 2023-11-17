@@ -8,7 +8,7 @@ const page = () => {
             <div class="mx-16 my-8">
                 <section class="">
                     <div class="flex flex-col md:flex-row justify-center">
-                        <div class="md:w-3/4 w-full">
+                        <div class="md:w-3/4 w-full mt-5">
                             <h2 class="mb-6 text-3xl font-bold">Contact Me</h2>
                             <p class="mb-6 md:max-w-xl">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
