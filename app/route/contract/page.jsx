@@ -37,7 +37,7 @@ const page = () => {
                                         id="email"
                                         name="email"
                                         required
-                                        className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
+                                        className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-green-400 bg-gray-25"
                                     />
                                 </div>
 
@@ -50,7 +50,7 @@ const page = () => {
                                         id="subject"
                                         name="subject"
                                         required
-                                        className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
+                                        className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-green-400 bg-gray-25"
                                     />
                                 </div>
 
@@ -63,7 +63,7 @@ const page = () => {
                                         name="message"
                                         required
                                         rows="4"
-                                        className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
+                                        className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-green-400 bg-gray-25"
                                     ></textarea>
                                 </div>
 
