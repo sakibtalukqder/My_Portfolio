@@ -12,7 +12,7 @@ const Education = () => {
             <div className='text-xl bg-orange-600 text-center p-3'>My Education </div>
             <div className="flex flex-col lg:flex-row-reverse items-center">
                 <div className='flex items-center justify-center w-[30%] my-8'>
-                    <Image src={imgProfile} className="max-w-sm rounded-lg shadow-2xl" />
+                    <Image src={imgProfile} alt='Sakib Talukqder' className="max-w-sm rounded-lg shadow-2xl" />
                 </div>
                 <div className='my-8 me-0 mx-0 md:me-16 md:w-[70%]'>
                     <Accordion

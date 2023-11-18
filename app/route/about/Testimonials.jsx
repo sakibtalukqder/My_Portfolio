@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-import Image from 'next/image';
 
 const testimonials = [
+
     {
         id: 1,
         quote: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni pariatur aspernatur accusamus quam tempora delectus asperiores optio dolor corrupti id esse maiores temporibus eaque, sit totam itaque tenetur consequatur perspiciatis.",
@@ -29,8 +29,8 @@ const testimonials = [
         rating: 3,
         image: "https://source.unsplash.com/300x300/?man",
     },
-    // Add more testimonials as needed
-];
+
+]
 
 const Testimonials = () => {
     const [selectedTestimonial, setSelectedTestimonial] = useState(testimonials[0]);
@@ -50,7 +50,7 @@ const Testimonials = () => {
                         >
                             <div className='flex flex-col md:flex-row gap-2'>
                                 <figure className=' h-16 w-16 rounded-full overflow-hidden'>
-                                    <img src={testimonial.image} alt='user image' />
+                                    <img src={testimonial.image} alt='Testimonials user image' />
                                 </figure>
                                 <div>
                                     {testimonial.author}
