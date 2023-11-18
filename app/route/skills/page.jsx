@@ -103,8 +103,8 @@ const SkillCard = ({ skill }) => {
             <figure className='flex justify-center items-center h-16 w-16 overflow-hidden'>
                 {
                     skill.icon ?
-                        <FontAwesomeIcon icon={skill.icon} className="text-md mb-2 h-12 w-12" />
-                        : <img src={skill.img} alt='Icon' className="mb-2 h-12 w-12" />
+                        <FontAwesomeIcon icon={skill.icon} className="text-md mb-2 h-12 w-12 text-black" />
+                        : <img src={skill.img} alt={skill.name} className="mb-2 h-12 w-12" />
                 }
             </figure>
             <h3 className="text-md font-semibold mb-2">{skill.name}</h3>

@@ -6,7 +6,41 @@ body {
   font-family: 'Relaway', sans-serif;
 }
 
-.My_Logo{
+.My_Logo {
   font-family: 'Economica', sans-serif;
   font-weight: bolder;
+}
+
+#Themelight {
+
+  background-color: aliceblue;
+  color: black;
+
+  .text-black {
+    color: black;
+  }
+
+  .bg-blue-50 {
+    background-color: #d6e1fe;
+  }
+
+  .text-gray-100 {
+    color: rgb(52, 52, 52);
+  }
+
+}
+
+#ThemeDark {
+
+  background-color: #080808;
+  color: white;
+
+  .text-black {
+    color: white;
+  }
+
+  .bg-blue-50 {
+    background-color: #00030b;
+  }
+
 }

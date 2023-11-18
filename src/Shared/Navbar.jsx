@@ -9,7 +9,7 @@ const Navbar = () => {
         <Link href={'/route/skills'}><li className='px-4 py-2 rounded hover:bg-green-300'>Skills</li></Link>
         <Link href={'/route/projects'}><li className='px-4 py-2 rounded hover:bg-green-300'>Projects</li></Link>
         <Link href={'/route/contract'}><li className='px-4 py-2 rounded hover:bg-green-300'>Contract</li></Link>
-        <div><li className='px-2 py-2 rounded-full hover:bg-green-300 flex items-center'> <DarkToggle /> </li></div>
+        <div><li className=' py-2 rounded hover:bg-green-300 flex items-center px-4'> <DarkToggle /> </li></div>
     </>
     return (
         <div className='z-[100]'>
