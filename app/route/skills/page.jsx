@@ -14,14 +14,14 @@ const skills = [
     {
         Title: 'Programming Language',
         Array: [
-            { name: 'Python', icon: faPython, level: 7 },
+            { name: 'Python', icon: faPython, level: 8.8 },
             { name: 'C', img: '/Icon/C.png', level: 5 },
-            { name: 'Java', icon: faJava, level: 7 },
-            { name: 'Csharp', img: '/Icon/csharp.png', level: 7 },
-            { name: 'JavaScript', icon: faJs, level: 8 },
+            { name: 'Java', icon: faJava, level: 8.5 },
+            { name: 'Csharp', img: '/Icon/csharp.png', level: 8.5 },
+            { name: 'JavaScript', icon: faJs, level: 9 },
+            { name: 'C++', img: '/Icon/Cpp.png', level: 3 },
             { name: 'ES6', icon: faJs, level: 8 },
             { name: 'Arduino', img: '/Icon/Arduino.png', level: 8 },
-            { name: 'TypeScript', icon: faJs, level: 0 },
         ],
 
     },
@@ -31,11 +31,11 @@ const skills = [
         Array: [
             { name: 'React', icon: faReact, level: 8 },
             { name: 'Next.js', img: '/Icon/next.png', level: 5 },
-            { name: 'HTML', icon: faHtml5, level: 8 },
+            { name: 'HTML', icon: faHtml5, level: 8.6 },
             { name: 'CSS', icon: faCss3, level: 7 },
-            { name: 'Tailwind', img: '/Icon/tailwind.png', level: 8 },
+            { name: 'Tailwind', img: '/Icon/tailwind.png', level: 8.5 },
             { name: 'Bootstrap', icon: faBootstrap, level: 7 },
-            { name: 'Daisyui', img: '/Icon/daisyui.png', level: 7 },
+            { name: 'Daisyui', img: '/Icon/daisyui.png', level: 7.6 },
             { name: 'KeepReact', img: '/Icon/keep.svg', level: 7 },
         ],
 
@@ -44,10 +44,14 @@ const skills = [
     {
         Title: 'BackEnd Development',
         Array: [
-            { name: 'Node.js', icon: faNodeJs, level: 7 },
+            { name: 'Node.js', icon: faNodeJs, level: 8 },
             { name: 'Express.js', icon: faNode, level: 6 },
             { name: 'MongoDb', img: '/Icon/mongo.png', level: 6 },
             { name: 'FireBase', img: '/Icon/firebase.png', level: 6 },
+            { name: 'Postman', img: '/Icon/Postman.png', level: 6 },
+            { name: 'Django', img: '/Icon/django.png', level: 1 },
+            { name: 'Nodemon', img: '/Icon/npm.png', level: 10 },
+            { name: 'bcrypt', img: '/Icon/npm.png', level: 3 },
         ],
 
     },
@@ -66,7 +70,7 @@ const skills = [
     {
         Title: 'Office and Docs',
         Array: [
-            { name: 'Docs', img: '/Icon/docs.png', level: 8 },
+            { name: 'Docs', img: '/Icon/docs.png', level: 7 },
             { name: 'SpaceSheet', img: '/Icon/sheet.png', level: 7 },
             { name: 'MsAccess', img: '/Icon/access.png', level: 8 },
             { name: 'Powerpoint', img: '/Icon/PowerPoint.png', level: 8 },
@@ -91,7 +95,7 @@ const skills = [
             { name: 'Github', icon: faGithub, level: 8 },
             { name: 'VS Code', img: '/Icon/code.png', level: 9 },
             { name: 'FireFox', icon: faFirefox, level: 10 },
-            { name: 'Arduino', img: '/Icon/arduino_2.png', level: 10 },
+            { name: 'Arduino', img: '/Icon/arduino_2.png', level: 9 },
         ],
     },
 
