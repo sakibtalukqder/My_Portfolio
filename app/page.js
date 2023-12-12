@@ -10,7 +10,7 @@ export default function Home() {
   const textToType = 'This is Sakib Talukqder, \n welcome to my Portfolio....! \n I am a CSTean form Bangladesh; Learning Computer Science in, \n MoulviBazar Polytechnic Institute.';
 
   return (
-    <main className="">
+    <main className=" m-4">
 
       <div className="flex flex-col lg:flex-row w-full items-center justify-between">
         <div className="w-full ms-3 md:ms-16 my-8">

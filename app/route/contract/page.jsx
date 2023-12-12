@@ -5,7 +5,7 @@ import React from 'react';
 const page = () => {
     return (
         <div>
-            <div className="mx-16 my-8">
+            <div className="md:mx-16 mx-4 my-8">
                 <section className="">
                     <div className="flex flex-col md:flex-row justify-center">
                         <div className="md:w-3/4 w-full mt-5">
@@ -80,6 +80,7 @@ const page = () => {
                     </div>
                 </section>
             </div>
+            <br />
         </div>
     );
 };

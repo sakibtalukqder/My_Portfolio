@@ -4,7 +4,7 @@ import { faFacebook, faInstagram, faGithub, faGoogle } from '@fortawesome/free-b
 
 const Icons = () => {
     return (
-        <div className="flex space-x-4 p-4 justify-center items-center">
+        <div className="flex space-x-4 p-4 ps-0 md:ps-4 justify-center items-center">
             <a href="https://www.facebook.com/sakibtalukqder" target='/' className="text-blue-600 hover:text-blue-800 w-8">
                 <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>

@@ -14,7 +14,7 @@ const Footer = () => {
                     <br /> <p>Sakib Talukqder <br /> &copy; All right resurved 2023 </p>
                 </aside>
                 <nav>
-                    <header className=" font-bold text-xl ms-3">Social Links :</header>
+                    <header className=" font-bold text-xl md:ms-3">Social Links :</header>
                     <Icons />
                 </nav>
             </footer>
