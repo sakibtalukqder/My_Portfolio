@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 import DarkToggle from '../Components/DarkToggle';
+import Image from 'next/image';
+
+import Logo from '@/public/Logo.png'
+
 
 const Navbar = () => {
     const menu = <>
@@ -15,7 +19,8 @@ const Navbar = () => {
         <div className='z-[100]'>
             <div className="navbar">
                 <div className="flex-1">
-                    <Link href={'/'} className="btn btn-ghost normal-case text-4xl My_Logo">
+                    <Link href={'/'} className="btn btn-ghost normal-case text-4xl My_Logo flex justify-center">
+                        <Image src={Logo} className=" w-10" alt="Profile Sakib Talukqder" />
                         Sakib Talukqder
                     </Link>
                 </div>

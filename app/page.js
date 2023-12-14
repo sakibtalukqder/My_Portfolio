@@ -22,7 +22,7 @@ export default function Home() {
           <Link href={'/route/contract'} className="btn btn-primary m-2">Contract Me</Link>
         </div>
         <div className="w-full flex justify-center my-8 ">
-          <figure className="w-[450px] h-[450px] overflow-hidden">
+          <figure className="flex items-center justify-center w-[450px] h-[450px] overflow-hidden">
             <Image src={imgProfile} className="rounded-lg shadow-2xl" alt="Profile Sakib Talukqder" />
           </figure>
         </div>
