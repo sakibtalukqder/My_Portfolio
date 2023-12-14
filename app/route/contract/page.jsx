@@ -26,8 +26,8 @@ const page = () => {
                             </p> <br />
 
                             <Image src={Logo} width={250} height={250} alt="Profile Sakib Talukqder" />
-                            <Link href={'/'} className="btn btn-ghost normal-case text-4xl My_Logo my-2">
-                                ---- Sakib Talukqder ----
+                            <Link href={'/'} className="btn btn-ghost normal-case text-4xl My_Logo">
+                                --- Sakib Talukqder ---
                             </Link>
 
                         </div>
