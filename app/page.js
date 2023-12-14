@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-import imgProfile from '@/public/Profile.jpg'
+import imgProfile from '@/public/Profile.png'
 import Typewriter from "@/src/Components/Typewriter";
 import Link from "next/link";
 
@@ -22,7 +22,9 @@ export default function Home() {
           <Link href={'/route/contract'} className="btn btn-primary m-2">Contract Me</Link>
         </div>
         <div className="w-full flex justify-center my-8 ">
-          <Image src={imgProfile} className="max-w-sm rounded-lg shadow-2xl" alt="Profile Sakib Talukqder" />
+          <figure className="w-[450px] h-[450px] overflow-hidden">
+            <Image src={imgProfile} className="rounded-lg shadow-2xl" alt="Profile Sakib Talukqder" />
+          </figure>
         </div>
       </div>
 
