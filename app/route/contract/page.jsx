@@ -2,6 +2,10 @@ import { faAt, faHome, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
+import Logo from '@/public/Logo.png'
+import Image from 'next/image';
+import Link from 'next/link';
+
 const page = () => {
     return (
         <div>
@@ -9,13 +13,8 @@ const page = () => {
                 <section className="">
                     <div className="flex flex-col md:flex-row justify-center">
                         <div className="md:w-3/4 w-full mt-5">
+
                             <h2 className="mb-6 text-3xl font-bold">Contact Me</h2>
-                            <p className="mb-6 md:max-w-xl">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Laudantium, modi accusantium ipsum corporis quia asperiores
-                                dolorem nisi corrupti eveniet dolores ad maiores repellendus enim
-                                autem omnis fugiat perspiciatis? Ad, veritatis.
-                            </p>
                             <p className="mb-2 flex mt-1">
                                 <FontAwesomeIcon icon={faHome} width={20} className='me-3' />   Mujib Sarak, Sirajganj Sadre, Sirajganj
                             </p>
@@ -24,7 +23,13 @@ const page = () => {
                             </p>
                             <p className="mb-2 flex mt-1">
                                 <FontAwesomeIcon icon={faAt} width={20} className='me-3' />     sakibtalukqder07@gmail.com
-                            </p>
+                            </p> <br />
+
+                            <Image src={Logo} width={250} height={250} alt="Profile Sakib Talukqder" />
+                            <Link href={'/'} className="btn btn-ghost normal-case text-4xl My_Logo my-2">
+                                ---- Sakib Talukqder ----
+                            </Link>
+
                         </div>
                         <div className="mt-4 px-0 md:mb-0 w-full md:w-6/12 md:px-3 lg:px-6">
                             <form className="max-w-md mx-auto">
