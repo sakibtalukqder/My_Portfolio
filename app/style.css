@@ -41,8 +41,24 @@ body {
     background-color: #00030b;
   }
 
-  .bg-gray-25{
+  .bg-gray-25 {
     background-color: rgb(8, 8, 8);
   }
 
+}
+
+
+
+.animation-svg {
+  animation: blobAnimation 4s infinite alternate-reverse;
+}
+
+@keyframes blobAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.8;
+  }
 }
