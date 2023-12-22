@@ -44,7 +44,7 @@ export default function Home() {
               <div className="w-3 h-3 rounded-full bg-yellow-500 mr-1"></div>
               <div className="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
-            <div className="md:text-lg text-xs font-semibold w-full p-4 pb-5 flex items-center textAnimation">
+            <div className="md:text-md text-sm w-full p-4 pb-5 flex items-center textAnimation">
               <Typewriter text={textToType} />
             </div>
             <div className='w-full pe-3 flex justify-end'>
