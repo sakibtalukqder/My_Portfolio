@@ -44,9 +44,9 @@ const Form = () => {
         }));
     };
 
-
     return (
         <div className="mt-4 px-0 md:mb-0 w-full md:w-6/12 md:px-3 lg:px-6">
+            <ToastContainer />
             <form ref={form} className="max-w-md mx-auto" onSubmit={sendEmail}>
                 {/* ... rest of your form code ... */}
                 <div className="mb-4">
