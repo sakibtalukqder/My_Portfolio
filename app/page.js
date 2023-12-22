@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
 
-  const textToType = 'const Sakib_Talukqder = () => { \n\n     I am a CSTean form Bangladesh; \n     Learning (Computer_Science) => { \n         MoulviBazar Polytechnic Institute; \n         matarkapun, Moulvibazar;\n         Department of Computer Technology; \n     }\n} \nSakib_Talukqder(); ';
+  const textToType = 'const Sakib_Talukqder = () => { \n\n     I am a CSTean form Bangladesh; \n     Learning (Computer_Science) => ({ \n         MoulviBazar Polytechnic Institute; \n         matarkapun, Moulvibazar;\n         Department of Computer Technology; \n     })\n     [Ewlcome To My Portfolio]\n\n} \nSakib_Talukqder(); ';
 
   return (
     <main className="m-4">
