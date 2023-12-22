@@ -104,10 +104,10 @@ const skills = [
 const SkillCard = ({ skill }) => {
     return (
         <div className=" w-32 h-32 p-3 flex flex-col items-center justify-center border">
-            <figure className='flex justify-center items-center h-16 w-16 overflow-hidden'>
+            <figure className='flex justify-center items-center h-16 w-16 overflow-hidden '>
                 {
                     skill.icon ?
-                        <FontAwesomeIcon icon={skill.icon} className="text-md mb-2 h-12 w-12 text-black" />
+                        <FontAwesomeIcon icon={skill.icon} className="text-md mb-2 h-12 w-12 text-black textAnimation" />
                         : <img src={skill.img} alt={skill.name} className="mb-2 h-12 w-12" />
                 }
             </figure>
@@ -123,13 +123,15 @@ const page = () => {
             <div className="hero-content md:items-start flex-col lg:flex-row">
                 <div className='md:w-1/2'>
                     <div className="flex justify-center md:justify-start">
-                        <figure className='w-72 h-72 mb-8 overflow-hidden flex items-center justify-center rounded shadow-xl'>
+                        <figure className='w-72 h-72 mb-8 overflow-hidden flex items-center justify-center rounded shadow-xl glow'>
                             <Image src={img} alt='Sakib Picture' />
                         </figure>
                     </div>
-                    <h1 className="text-4xl font-bold">Things I worked With .... !</h1>
-                    <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <p className=''>Language: <span className=' text-green-200'>English and Bangla both Reading and Speaking .</span></p>
+                    <div className='textAnimation'>
+                        <h1 className="text-4xl font-bold">Things I worked With .... !</h1>
+                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p className=''>Language: <span className=' text-green-200'>English and Bangla both Reading and Speaking .</span></p>
+                    </div>
                 </div>
                 <div className="md:w-1/2">
                     <Accordion

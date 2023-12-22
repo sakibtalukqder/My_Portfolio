@@ -70,8 +70,8 @@ const Testimonials = () => {
                     ))}
                 </div>
                 <div className="w-3/4 h-full mx-auto ">
-                    <div className="bg-green-50 p-6 rounded-lg">
-                        <p className="text-gray-700">{'==>' + ' ' + selectedTestimonial.author}</p>
+                    <div className="bg-green-50 textAnimation p-6 rounded-lg">
+                        <p className="text-gray-700 ">{'==>' + ' ' + selectedTestimonial.author}</p>
                         <div className="flex items-center my-2">
                             {[...Array(selectedTestimonial.rating)].map((_, index) => (
                                 <FontAwesomeIcon key={index} icon={faStar} className="h-5 w-5 text-yellow-400" />

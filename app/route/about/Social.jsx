@@ -4,8 +4,8 @@ import { faFacebook, faInstagram, faGithub, faGoogle } from '@fortawesome/free-b
 
 const Social = () => {
     return (
-        <div className='my-8'>
-            <h1 className=' text-2xl my-1 font-bold text-center'>Follow Me on Social Media</h1>
+        <div className='my-8 textAnimation'>
+            <h1 className=' text-3xl my-1 font-bold text-center'>Follow Me on Social Media</h1>
             <div className="flex space-x-4 p-4 justify-center items-center">
                 <a href="#" className="text-blue-600 hover:text-blue-800 w-8">
                     <FontAwesomeIcon icon={faFacebook} size="2x" />

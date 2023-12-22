@@ -6,13 +6,16 @@ body {
 
 .My_Logo {
   font-family: 'Economica', sans-serif;
-  font-weight: 400px;
+  font-size: 400px;
+  font-weight: bolder;
 }
 
 .glow {
-  -webkit-box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.71);
-  -moz-box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.71);
-  box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.71);
+  animation: GlowEffect 2s ease-in-out infinite alternate;
+}
+
+.textAnimation {
+  animation: textGlow 2s ease-in-out infinite alternate;
 }
 
 .glassMorphism {
@@ -65,18 +68,28 @@ body {
   animation: blobAnimation 4s infinite alternate-reverse;
 }
 
-.textAnimation {
-  animation: textGlow 1s ease-in-out infinite alternate;
+@keyframes GlowEffect {
+from {
+  -webkit-box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.71);
+    -moz-box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.71);
+    box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.71);
+  }
+
+  to {
+    -webkit-box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.51);
+    -moz-box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.51);
+    box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.51);
+  }
 }
 
 @keyframes textGlow {
   from {
-    text-shadow: 0 0 10px rgba(45, 255, 196, 0.7);
+    text-shadow: 0 0 10px rgba(45, 255, 196, 0.4);
   }
 
   to {
-    text-shadow: 0 0 15px rgba(45, 255, 196, 0.7),
-      0 0 5px rgba(45, 255, 196, 0.7);
+    text-shadow: 0 0 15px rgba(45, 255, 196, 0.4),
+      0 0 5px rgba(45, 255, 196, 0.4);
   }
 }
 
