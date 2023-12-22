@@ -24,7 +24,7 @@ const Typewriter = ({ text }) => {
   }, [text, currentIndex]);
 
   return (
-    <pre style={{ whiteSpace: 'pre-line', fontFamily: '' }}>{displayText}</pre>
+    <pre style={{ whiteSpace: 'pre-wrap', fontFamily: '' }}>{displayText}</pre>
   );
 };
 

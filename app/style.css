@@ -6,7 +6,21 @@ body {
 
 .My_Logo {
   font-family: 'Economica', sans-serif;
-  font-weight: bolder;
+  font-weight: 400px;
+}
+
+.glow {
+  -webkit-box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.71);
+  -moz-box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.71);
+  box-shadow: 0px 0px 300px 0px rgba(45, 255, 196, 0.71);
+}
+
+.glassMorphism {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 #Themelight {
@@ -47,10 +61,23 @@ body {
 
 }
 
-
-
 .animation-svg {
   animation: blobAnimation 4s infinite alternate-reverse;
+}
+
+.textAnimation {
+  animation: textGlow 1s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 10px rgba(45, 255, 196, 0.7);
+  }
+
+  to {
+    text-shadow: 0 0 15px rgba(45, 255, 196, 0.7),
+      0 0 5px rgba(45, 255, 196, 0.7);
+  }
 }
 
 @keyframes blobAnimation {
