@@ -11,7 +11,7 @@ const AboutMe = () => {
                 <div className="hero-content text-center text-neutral-content">
                     <div className="hero">
                         <div className="hero-content flex-col lg:flex-row">
-                            <Image src={imgProfile} alt='Sakib Talukqder' className="md:max-w-sm rounded-lg shadow-2xl" />
+                            <Image placeholder='blur' src={imgProfile} alt='Sakib Talukqder' className="md:max-w-sm rounded-lg shadow-2xl" />
                             <div className=' text-left textAnimation'>
                                 <h1 className="text-3xl font-bold ">There is all about me .... !!</h1>
                                 <p className="py-6">

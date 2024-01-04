@@ -124,7 +124,7 @@ const page = () => {
                 <div className='md:w-1/2'>
                     <div className="flex justify-center md:justify-start">
                         <figure className='w-72 h-72 mb-8 overflow-hidden flex items-center justify-center rounded shadow-xl glow'>
-                            <Image src={img} alt='Sakib Picture' />
+                            <Image placeholder='blur' src={img} alt='Sakib Picture' />
                         </figure>
                     </div>
                     <div className='textAnimation'>
