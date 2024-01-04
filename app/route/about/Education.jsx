@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import imgProfile from '@/public/sakib2.jpg'
+import imgProfile from '@/public/Profile.png'
 import Image from 'next/image';
 import { Accordion } from "keep-react";
 import { CaretDown, CaretUp } from "phosphor-react";
@@ -11,8 +11,8 @@ const Education = () => {
         <div className=" bg-blue-50 md:p-12">
             <div className='text-xl bg-orange-600 text-center p-3'>My Education </div>
             <div className="flex flex-col lg:flex-row-reverse items-center">
-                <div className='flex items-center justify-center w-[30%] my-8'>
-                    <Image src={imgProfile} alt='Sakib Talukqder' className="max-w-sm rounded-lg shadow-2xl" />
+                <div className='flex items-center justify-center w-[30%]'>
+                    <Image quality={100} src={imgProfile} alt='Sakib Talukqder' className="max-w-sm rounded-lg shadow-2xl bg-gradient-to-r from-blue-900 to-green-500" />
                 </div>
                 <div className='my-8 me-0 mx-0 md:me-16 md:w-[70%]'>
                     <Accordion

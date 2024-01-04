@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const items = 
+const items =
     [
         {
             "title": "My Portfolio ",
@@ -55,39 +55,40 @@ const items =
 
 const page = () => {
     return (
-        <div className='my-8'>
-            <div className='text-xl bg-green-50 text-gray-950 text-center p-3'>My Works & Experience </div>
+        <div className='my-5'>
             {
                 items.map((item, ind) => (
-                    <div key={ind} className="hero gap-7">
-                        <div className={`hero-content flex-col ${ind % 2 == 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
-                            <>
-                                <div className="text-center lg:text-left">
-                                    <Image src={item.imageName} alt={item.title} width={500} height={300} />
-                                </div>
-                                <div className=" hero-content w-full max-w-sm shadow-2xl p-4 md:p-10">
-                                    <div className=" ">
-                                        <h2 className="text-2xl font-bold mb-4">{item.title}</h2>
-                                        <p className="mb-4">{item.description}</p>
-                                        <p className="mb-4">
-                                            <strong>Technologies used:</strong> {item.technologies}
-                                        </p>
-                                        <a href={item.ctaLink} target='/' className=" btn btn-success btn-sm">
-                                            {
-                                                ind % 2 == 0 ? 'View case study ==>' : '<== View case study'
-                                            }
-                                        </a>
+                    <>
+                        <div className='text-xl text-center p-3'>{item.title}</div> <hr />
+                        <div key={ind} className="hero h-[80vh]">
+                            <div className={`hero-content flex-col ${ind % 2 == 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'}`}>
+                                <>
+                                    <div className="text-center lg:text-left">
+                                        <Image src={item.imageName} alt={item.title} width={500} height={300} />
                                     </div>
-                                </div>
-                            </>
-
+                                    <div className=" hero-content w-full max-w-sm shadow-2xl p-4 md:p-10">
+                                        <div className=" ">
+                                            <h2 className="text-2xl font-bold mb-4">{item.title}</h2>
+                                            <p className="mb-4">{item.description}</p>
+                                            <p className="mb-4">
+                                                <strong>Technologies used:</strong> {item.technologies}
+                                            </p>
+                                            <a href={item.ctaLink} target='/' className=" btn btn-success btn-sm">
+                                                {
+                                                    ind % 2 == 0 ? 'View case study ==>' : '<== View case study'
+                                                }
+                                            </a>
+                                        </div>
+                                    </div>
+                                </>
+                            </div>
                         </div>
-                    </div>
+                    </>
                 ))
             }
 
         </div>
-        )
-    }
-      
+    )
+}
+
 export default page;
