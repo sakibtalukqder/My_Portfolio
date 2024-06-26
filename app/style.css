@@ -62,6 +62,14 @@ body {
     background-color: rgb(8, 8, 8);
   }
 
+  .text-blueGray-900 {
+    color: #d6e1fe;
+  }
+
+  .text-gray-800{
+    color: azure;
+  }
+
 }
 
 .animation-svg {
